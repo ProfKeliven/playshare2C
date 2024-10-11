@@ -149,8 +149,18 @@
                     </section>
                 </div>
                 <div class="content__collumn">
-                    <section id="player">
+                    <section id="player" class="b-blue">
+                        <div class="artist">
+                            <h3 class="music__name">Música</h3>
+                            <p class="artist__name">Nome do artista</p>
+                            <div class="artist__img">
 
+                            </div>
+                            
+                        </div>
+                        <audio src="">
+                            <source>
+                        </audio>
                     </section>
                     <section id="favoritos"></section>
                 </div>
@@ -160,21 +170,7 @@
         </div>
     </main>
 
-    <script>
-        //funcao vai na pagina inicial
-        function verificaUsuario(){
-            let usuarioLogado = sessionStorage.getItem('usuarioLogado')
-
-            if(!usuarioLogado){
-                console.log("usuario nao logado")
-                window.location.href = 'index.html'
-            }
-        }
-
-        window.onload = function(){
-            verificaUsuario()
-        }
-    </script>
+    
 </body>
 
 </html>

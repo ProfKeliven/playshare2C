@@ -170,17 +170,22 @@ input:hover{
 /*home*/
 #home{
     display: flex;
-    width: 100vw;
+    width: 100%;
+    justify-content: space-between;
 }
 
 #home .container{
     margin-left: 8.1%;
 }
 
+#home .content{
+    display: flex;
+    justify-content: space-between;
+}
 /*header*/
 .header{
     padding: 20px 25px;
-    width: 88vw;
+    width: 87;
     border-radius: 0px 0px 0px 20px ;
 }
 .header__content{
@@ -297,4 +302,10 @@ section{
     border-radius: 50%;
     background-color: black; /* Cor do fundo que aparece no furo */
     transform: translate(-50%, -50%);
+}
+/*player*/
+#player{
+    height: 60vh;
+    width: 250px;
+    border-radius: 0px 0px 150px 150px;
 }

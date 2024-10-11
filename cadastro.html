@@ -17,8 +17,8 @@
                     <h3>Efetuar Cadastro</h3>
                     <p>Digite seus dados para se cadastrar na plataforma</p>
                 </div>
-                    <!--colocamos como espera de evento no form e chamamos funcao addUser-->
-                <form class="left__column container__form" onsubmit="event.preventDefault(); addUser();">
+                    <!--colocamos como espera de evento no form e chamamos funcao cadastrarUsuario-->
+            <form class="left__column container__form" onsubmit="event.preventDefault(); cadastrarUsuario();">
                     <input class="b-blue" type="text" placeholder="Nome completo" id="name" required>
 
                     <input class="b-blue" type="email" placeholder="E-mail" id="email" required>
@@ -27,9 +27,9 @@
                         <input class="b-blue" type="password" placeholder="Senha" id="password" required>
                         <input class="b-blue" type="password" placeholder="Confirmar senha" id="confirm-password" required>
                     </div>
-                    <span id="error"></span>
+                    <span id="mensagem"></span>
                     <div class="inline__end">
-                        <button id="back" onclick="backLogin()">Voltar</button>
+                        <button id="back" onclick="voltar()">Voltar</button>
                         <!--tiramos o evento onclick do botao acessar e colocamos um type: submit-->
                         <button id="send" type="submit">Acessar</button>
                     </div>
@@ -42,7 +42,7 @@
         </div>
 
     </main>
-    <script src="./scripts/autenticacao.js"></script>
+    <script src="scripts/cadastro.js"></script>
 </body>
 
 </html>
